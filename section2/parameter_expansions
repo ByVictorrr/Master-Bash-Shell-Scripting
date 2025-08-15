@@ -1,0 +1,31 @@
+#!/bin/bash
+
+name="ZiYaD"
+echo $name
+echo ${name}
+
+# lower case the first char 
+echo ${name,} # ziYaD
+
+# upper case the first char
+echo ${USER^} # Delaplai
+
+# whole string upper chase
+echo ${USER^^} # DELAPLAI
+
+# length of variable
+echo ${#name} # 5
+
+# slicing
+# ${parameter:offset:length}
+numbers=0123456789
+echo ${number:0:7} # 0123456
+echo ${number:1:5} # 12345
+# ${parameter:offset} - length is reset of the characters
+echo ${number:1} # 123456789
+
+# negative offset
+echo ${numbers: -3:2} # 78
+echo ${numbers: -3} # 789
+
+

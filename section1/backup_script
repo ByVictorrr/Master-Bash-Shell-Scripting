@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Description: backup all the files in $(whoami) home dir
+
+user=$(whoami)
+home_dir="/home/$(user)"
+backup_dir="/tmp/my_backups"
+
+mkdir -p $backup_dir
+
+tar -cvf $backup_dir/backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $home_dir/* 2>/dev/null
+
+
