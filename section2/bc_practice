@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# bc for decimal places need scale=<decimal_places>
+echo "scale=1; 5/2" | bc

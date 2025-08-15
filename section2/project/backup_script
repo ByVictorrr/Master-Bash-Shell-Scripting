@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Description: backup all the files in $(whoami) home dir
+
+home_dir="/home/$USER"
+backup_dir="/tmp/my_backups"
+
+mkdir -p $backup_dir
+
+echo "Hello, $USER"
+echo "I will now back up your home directory, ${home_dir}"
+echo "You are running this script from $(pwd)"
+echo "Therefore, I will save the backup in $backup_dir"
+tar -cf $backup_dir/backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $home_dir/* 2>/dev/null
+echo "Backup Completed Successfully."
+
+

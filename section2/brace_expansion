@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# String list expanision - no spaces
+echo {a,19,z,barry,42}
+
+echo {jan,feb,mar,apr,may,jun}
+
+echo {1,2,3,4,5,6,7,8,9,10}  # tedious
+
+# Range list expansion
+
+echo {1..10}
+# reverse
+echo {10..1}
+# alphabet
+echo {a..z}
+# echo {1..1000}
+
+# {$start..$end..$step}
+echo {1..1000..3}
+

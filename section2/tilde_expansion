@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo ~ # /home/${USER}
+echo ~root # /root
+
+echo $PWD
+echo $OLDPWD
+
+echo ~+ # PWD
+echo ~- # OLDPWD

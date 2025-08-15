@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Mathetmatical operations: + - / *
+# arithmetic expanision $(( $x + $y )) or $(( x + y ))
+
+echo $(( 4 + 2 ))
+x=4
+y=2
+echo $(( $x + $y ))
+echo $(( x + y ))
+echo $(( x - y ))
+echo $(( x / y ))
+echo $(( x * y ))
+
+# more than two operands
+echo $(( 2 + 3 * 4 ))
+# presendence with ()
+echo $(( (2+3) *4 ))
+
+# pow(x, y) is $(( x ** y )
+echo $(( 4 ** 2 ))
+
+# x % y, 4 % 2 = 0, 3 % 2 = 1
+echo $(( 3 % 2 ))
